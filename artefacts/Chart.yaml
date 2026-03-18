@@ -1,0 +1,6 @@
+apiVersion: v2
+name: powerTemp-chart
+description: A Helm chart for deploying ImagePro application
+type: application
+version: 1.0.0
+appVersion: "1.0"

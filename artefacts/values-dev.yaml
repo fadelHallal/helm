@@ -1,0 +1,21 @@
+deploymentName: powertemp-devtest
+
+serviceAccount:
+  name: powertemp-devtest-sa
+image: 
+  repository: quay.io/redhattraining/hello-world-nginx
+  tag: latest
+resources:
+  limits:
+    cpu: 300m
+    memory: 650Mi
+  requests:
+    cpu: 150m
+    memory: 200Mi
+ingress:
+  enabled: true
+route:
+  tls:
+    enabled: false
+  enabled: true
+  host: ""

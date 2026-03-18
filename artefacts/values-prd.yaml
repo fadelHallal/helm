@@ -1,0 +1,21 @@
+deploymentName: powertemp-prod
+
+serviceAccount:
+  name: powertemp-prod-sa
+image: 
+  repository: quay.io/redhattraining/hello-world-nginx
+  tag: latest
+resources:
+  limits:
+    cpu: 500m
+    memory: 650Mi
+  requests:
+    cpu: 150m
+    memory: 200Mi
+ingress:
+  enabled: true
+route:
+  tls:
+    enabled: true
+  enabled: true
+  host: ""
