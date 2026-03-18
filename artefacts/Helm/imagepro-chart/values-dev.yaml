@@ -1,0 +1,12 @@
+deploymentName: imagepro-dev
+#change me
+
+serviceAccount:
+  name: imagepro-dev-sa
+
+resources:
+  # change me
+
+route:
+  # change me
+  host: "imagepro-dev.apps.openshift.example.com"
